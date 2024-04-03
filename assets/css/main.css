@@ -1,0 +1,78 @@
+* {padding:0;margin:0}
+header {
+    width: 800px;
+    background-color: #4678b2;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+header .title {
+    font-size: 12px;
+    color: #fff;
+    margin-left: 8px;
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+header svg {
+    vertical-align: middle;
+    margin-top: -2px;
+    cursor: pointer;
+}
+header .choose {margin-top:30px;}
+header .choose label {cursor: pointer;}
+main {
+    width: 800px;
+    border: solid 2px #4678b2;
+    box-sizing: border-box;
+}
+main .editor {
+    display: flex;
+    position: relative;
+}
+main .CodeMirror {
+    width: 400px;
+    height: 300px;
+}
+
+.convert-btn,.copy-btn {
+    width: 62px;
+    height: 24px;
+    position: absolute;
+    right:0;
+    top:0;
+    z-index: 2;
+}
+.convert-btn {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: white;
+    right: 50%;
+}
+.convert-btn:hover {
+    background-color: #0069d9;
+    border-color: #0069d9;
+    color: white;
+    cursor: pointer;
+}
+.copy-btn {
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    color: white;
+}
+.copy-btn:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    color: white;
+    cursor: pointer;
+}
+.copy-btn.disabled,.copy-btn:disabled {
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    cursor: not-allowed;
+}

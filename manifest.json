@@ -1,0 +1,19 @@
+{
+    "name": "js2ts",
+    "version": "0.0.1",
+    "description": "js2ts is a Chrome extension that can convert JavaScript objects or JSON data into TypeScript interfaces.",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "./assets/img/logo16.png",
+        "48": "./assets/img/logo48.png",
+        "128": "./assets/img/logo128.png"
+    },
+    "sandbox": {
+        "pages": [
+            "popup.html"
+        ]
+    },
+    "manifest_version": 3
+}
